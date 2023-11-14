@@ -5,9 +5,6 @@ from utilities.locators import HomePageLocators
 
 
 class HomePage(BasePage):
-    # search_box = (By.CSS_SELECTOR, "#twotabsearchtextbox")
-    # search_button = (By.ID, "nav-search-submit-button")
-
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver

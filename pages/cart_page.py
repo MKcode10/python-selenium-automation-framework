@@ -4,8 +4,6 @@ from utilities.locators import HomePageLocators
 
 
 class CartPage(BasePage):
-    # book_name = (By.XPATH, "//li//span[@class='a-truncate-cut']")
-
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver

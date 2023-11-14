@@ -13,10 +13,7 @@ class TestAmazon(unittest.TestCase):
     def class_setup(self):
         self.home_page = HomePage(self.driver)
 
-    # @data(("Monster Manga",), ("Dune Book",))
-    # @unpack
     # @file_data("../testdata/testdata.json")
-    # @pytest.mark.parametrize("book_name", get_excel_data())
     @data(*utils.get_data_from_excel("../testdata/testdata.xlsx"),)
     @unpack
     def test_amazon_pages(self, book_name):

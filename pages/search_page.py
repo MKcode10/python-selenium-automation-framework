@@ -5,8 +5,6 @@ from utilities.locators import HomePageLocators
 
 
 class SearchPage(BasePage):
-    # product = (By.XPATH, "//div[@data-asin='142156906X']//a//span[contains(@class,'a-text-normal')]")
-
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver

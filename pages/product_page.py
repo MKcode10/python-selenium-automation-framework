@@ -5,8 +5,6 @@ from utilities.locators import HomePageLocators
 
 
 class AddProduct(BasePage):
-    # cart_button = (By.XPATH, "//input[@id='add-to-cart-button']")
-
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
